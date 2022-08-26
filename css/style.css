@@ -19,9 +19,9 @@
   --header-background-color: #e3e3e3;
   --highlight-color: #000000;
   --featured-font-family: "Archivo", sans-serif;
-  --character-top-image-src: url("../images/characters/kids-on-the-bike.svg");
+  --character-top-image-src: url("../images/characters/kids-on-the-bike.png");
   --character-top-image-color: #ffffff;
-  --character-bottom-image-src: url("../images/characters/inverted-world-monster.svg");
+  --character-bottom-image-src: url("../images/characters/inverted-world-monster.png");
   --character-bottom-image-color: #e5e5e5;
   --background-lamp-image: url("../images/backgrounds/lamps.png");
   --footer-background-color: #b5bbbf;
@@ -163,7 +163,7 @@ header::before {
   color: var(--primary-color-contrast);
 }
 
-/*** WORLD CHARACTER STRYLE ***/
+/*** WORLD CHARACTER STYLE ***/
 
 .world-characters {
   width: 100%;
@@ -175,8 +175,8 @@ header::before {
 .world-characters#top-characters {
   height: 100%;
   background-color: var(--character-top-image-color);
-
-  mask: var(--character-top-image-src) bottom / 100% no-repeat;
+  bottom: -3px;
+  mask: var(--character-top-image-src) bottom / contain no-repeat;
   -webkit-mask: var(--character-top-image-src) bottom / 100% no-repeat;
 }
 

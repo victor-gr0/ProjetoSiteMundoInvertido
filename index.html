@@ -11,7 +11,7 @@
 </head>
 
 <body class="light-theme" aria-label="O site está utilizando o tema light" role="body">
-    <header>
+    <header aria-label="Cabeçalho da página.">
         <audio id="music" autoplay>
             <source src="musics/normal-world.mpeg" aria-details="Audio do site" />
         </audio>
@@ -48,7 +48,7 @@
             <div class="video-frame" aria-hidden="true">
                 <iframe width="460" height="215" src="https://www.youtube.com/embed/SJ9EFhQ3ANQ?controls=0"
                     title="youtube video player" frameborder="0" allow="accelerometer ; autoplay; clipboard-write;
-                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
             </div>
             <div class="section-texts">
                 <h2>Stranger Things Vol. 4</h2>
@@ -110,12 +110,13 @@
 
     <footer>
         <p>
-            Projeto construído para fins didáticos, com o objetivo de colocar em
+            Projeto construído para fins didáticos, desenvolvido por <strong>Victor Guimarães Rabello</strong> com o
+            objetivo de colocar em
             prática os conhecimentos de HTML, CSS e JavaScript aprendidos na DIO._
         </p>
         <img src="images/footer/logo.svg" alt="">
     </footer>
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="assets/js/main.js"></script>
     <script>
         window.addEventListener('click', function () {
             const audio = document.getElementById('music');
